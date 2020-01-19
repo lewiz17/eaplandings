@@ -155,6 +155,7 @@
     inset -6px -4px 12px #FFFFFF;
     border-radius: 15px;
     padding: 15px 20px;
+    transition: all 0.5s linear;
 }
 
 .hold-slider .slick-slide {
@@ -203,6 +204,3 @@
 .hold-slider .slick-dots .slick-active button{
     background: #0F4CEE;
 }
-
-
-  

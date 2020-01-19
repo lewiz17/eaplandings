@@ -49,7 +49,7 @@ export default {
       speed: 800,
       slidesToScroll: 1,
       appendDots: '.navDots'
-    },
+    }
   }),
   methods: {
     next() {
@@ -114,6 +114,13 @@ export default {
       justify-content: center;
       
     }
+  }
+
+  @media (min-width: 1264px){
+    .nav-slider{
+      left: 53%;
+    }
+    
   }
 }
 

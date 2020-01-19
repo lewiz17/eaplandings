@@ -9,10 +9,10 @@
     </v-col>
     <v-col lg="12" class="pa-0 player-wrap">
       <div class="hold-video">
-        <div class="video__poster">
-          <a href="#"><v-icon>mdi-play-circle</v-icon></a>
+        <div class="video__poster" ref="videoPoster">
+          <a href="#" @click.prevent="playVideo()"><v-icon>mdi-play-circle</v-icon></a>
         </div>
-        <video src="" controls ></video>
+        <video ref="videoElem" src="@/assets/video/sample.mp4" controls ></video>
       </div>
       <a href="#" class="btn-inset light__purple"><i>Get started</i></a>
     </v-col>
@@ -23,8 +23,15 @@
 export default {
   name: 'VideoSection',
   data: () => ({
-    
+    playing: false
   }),
+
+  methods: {
+    playVideo() {
+      this.$refs.videoPoster.style.display = "none";
+      this.$refs.videoElem.play();
+    }
+  }
 };
 </script>
 
@@ -102,6 +109,7 @@ export default {
     max-width: 100%;
     min-height: 992px;
     border-radius: 15px;
+    object-fit:cover;
   }
 }
 

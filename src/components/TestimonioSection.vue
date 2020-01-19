@@ -1,13 +1,51 @@
 <template>
-  <v-row>
+  <v-row class="comments-wrap">
     <v-col lg="12" class="pa-0">
-      <p>titulo</p>
+      <span class="title-two">Resume's our users have created</span>
     </v-col>
-    <v-col lg="6" class="pa-0">
-      <p>list testimonios</p>
+    <v-col lg="5" class="pa-0 top-resumes">
+      <div class="item-top">
+        <span class="profile_picture"></span>
+        <div class="top-info">
+          <span class="profile_name">Nikolas Gibson</span>
+          <span class="profile_job">Ui Designer</span>
+          <a href="#" class="link_see">View resume <v-icon>mdi-eye</v-icon></a>
+        </div>
+      </div>
+      <div class="item-top">
+        <span class="profile_picture"></span>
+        <div class="top-info">
+          <span class="profile_name">Nikolas Gibson</span>
+          <span class="profile_job">Ui Designer</span>
+          <a href="#" class="link_see">View resume <v-icon>mdi-eye</v-icon></a>
+        </div>
+      </div>
+      <div class="item-top">
+        <span class="profile_picture"></span>
+        <div class="top-info">
+          <span class="profile_name">Nikolas Gibson</span>
+          <span class="profile_job">Ui Designer</span>
+          <a href="#" class="link_see">View resume <v-icon>mdi-eye</v-icon></a>
+        </div>
+      </div>
+
+      <a href="#" class="btn-inset light__green"><i>Get started</i></a>
+
     </v-col>
-    <v-col lg="6" class="pa-0">
-      <p>principal testimonio</p>
+    <v-col lg="7" class="pa-0 author-comment">
+      <div class="item-top">
+        <span class="profile_picture"></span>
+        <div class="top-info">
+          <span class="profile_name">Nikolas Gibson</span>
+          <span class="profile_job">Ui Designer</span>
+          <a href="#" class="link_see">View resume <v-icon>mdi-eye</v-icon></a>
+          <p>Design and build your own higt-quality wabsites. Whether you’re 
+            promoting your bussines, showcasing your work,opening 
+            your store or starting a blog you can do it all with 
+            the 123 resume builder.</p>
+          <a href="#" class="link_next">Next comment <span><img src="@/assets/icons/arrow-next.png" alt=""/></span></a>
+        </div>
+      </div>
     </v-col>
   </v-row>
 </template>
@@ -22,6 +60,186 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.comments-wrap{
+  margin-bottom: 140px;
+}
+
+.top-resumes{
+  margin-top: 90px;  
+}
+.item-top{
+  font-family: "Montserrat";
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 495px;
+  padding: 21px 40px;
+  box-shadow: -6px -6px 16px #FFFFFF,
+    6px 6px 16px rgba(209, 205, 199, 0.4),
+  inset 6px 4px 12px rgba(0, 0, 0, 0.25),
+  inset -6px -4px 12px #FFFFFF;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  border: 1px solid #fff;
+
+
+  .profile_picture{
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    background: url('../assets/icons/resume-profile.png') no-repeat;
+    background-size: 84px;
+    background-position: center;
+    background-color: #F8F8F8;
+    box-shadow: -6px -6px 16px #FFFFFF,
+      6px 6px 16px rgba(209, 205, 199, 0.4),
+      inset 6px 4px 12px rgba(0, 0, 0, 0.25),
+      inset -6px -4px 12px #FFFFFF;
+    border-radius: 100px;
+    border: 2px solid #fff;
+  }
+
+  .top-info{
+    min-width: 280px;
+    padding-top: 14px;
+
+    .profile_name{
+      display: block;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      color: #2E64F0;
+    }
+    .profile_job{
+      display: block;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.1em;
+      color: #898989;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .link_see{
+      display: block;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.1em;
+      color: #2E64F0;
+      text-decoration: none;
+      text-align: right;
+
+      i{
+        font-size: 22px;
+        color: #2E64F0;
+      }
+
+      &:hover{
+        opacity: .8;
+      }
+
+    }
+  }
+
+  &:nth-child(3){
+    margin-bottom: 70px;
+  }    
+}
+
+
+.author-comment{
+
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  margin-top: 90px;
+
+
+  .item-top{
+    box-shadow: none;
+    min-width: 100%;
+    border: 0;
+    align-items: flex-start;
+    padding: 0 2%;
+
+    .profile_picture{
+      min-width: 156px;
+      height: 156px;
+      background: url('../assets/icons/resume-profile2.png') no-repeat;
+      background-size: 124.8px;
+      background-position: center;
+    }
+
+    .top-info{
+      max-width:660px;
+      padding-top: 40px;
+      
+      .profile_name{
+        font-size: 36px;
+        line-height: 36px;
+      }
+      .profile_job{
+        font-size: 24px;
+        line-height: 24px;
+        padding-bottom: 0;
+      }
+
+      .link_see{
+        font-size: 18px;
+        line-height: 18px;
+
+        i{
+          font-size: 31px;
+        }
+      }
+
+      p{
+        margin-top: 40px;
+      }
+
+      .link_next{
+        display: block;
+        text-align: right;
+        margin-top: 120px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        color: #2E64F0;
+        text-decoration: none;
+
+        span{
+          width: 70px;
+          height: 70px;
+          line-height: 70px;
+          text-align: center;
+          background: #F8F8F8;
+          box-shadow: -6px -6px 16px #FFFFFF, 
+          6px 6px 16px rgba(209, 205, 199, 0.4);
+          border-radius: 100px;
+          display: inline-block;
+          margin-left: 2%;
+          
+        }
+        
+        img{
+          vertical-align: middle;
+          
+        }
+
+        &:hover{
+          opacity: .8;
+        }
+      }
+    }
+  }
+}
 
 
 

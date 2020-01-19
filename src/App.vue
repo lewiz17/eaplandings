@@ -55,13 +55,13 @@ export default {
           0 150px,
           0 50px;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
     
   }
 
   .container{
-    padding: 70px 12px;
+    padding: 70px 12px 125px 12px;
 
     @media (min-width: 1264px){
       max-width: 90%;
@@ -81,7 +81,7 @@ export default {
   }
 
   /** General landing elements */
-  h1,.title-two{
+  h1,.title-two,.title-three{
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -95,6 +95,11 @@ export default {
   .title-two{
     font-size: 64px;
     line-height: 80px;
+  }
+  .title-three{
+    font-size: 52px;
+    line-height: 63px;
+    color: #0F4CEE;
   }
   p{
     font-family: "Open Sans";
@@ -158,6 +163,15 @@ export default {
         4px 4px 50px rgba(194, 40, 214, 0.2);
       }
     }
+    &.light__green{
+      i{
+        background: #00EEE0;
+        box-shadow: -6px -6px 16px #FFFFFF,
+        6px 6px 16px rgba(221, 219, 216, 0.4),
+        4px 4px 50px rgba(0, 238, 224, 0.2);
+      }
+    }
+
 
     
 
@@ -180,7 +194,14 @@ export default {
     justify-content: flex-end;
     display: flex;
     
+    .v-input input:invalid, .v-input textarea:invalid{
+      box-shadow: -6px -6px 16px #FFFFFF, 
+      inset 6px 4px 12px rgba(0, 0, 0, 0.25), 
+      inset -6px -4px 12px #FFFFFF;
+      border: 1px solid #fff;
+    }
   }
+  
 
   /** Forms fixes landing */
   .v-text-field{
@@ -192,7 +213,6 @@ export default {
       border-radius: 15px;
       min-height: 81px;
       padding-left: 30px;
-      border: 1px solid #fff;
      
 
       &::placeholder{
@@ -207,6 +227,8 @@ export default {
         border: 0px !important;
       }
     }
+
+    padding-bottom: 10px;
   }
 
 </style>

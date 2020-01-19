@@ -25,21 +25,30 @@
         <span class="title-inline">
           or Sign Up with Email
         </span>
-        <v-form ref="signupForm">
+        <v-form ref="formSignup" v-model="isValid">
           <v-container>
             <v-row>
               <v-col lg="12">
                 <v-text-field
                   placeholder="Email"
+                  v-model="formSignup.email"
+                  name="email"
+                  :rules="formSignup.emailRules"
+                  required
                 ></v-text-field>
               </v-col>
               <v-col lg="12">
                 <v-text-field
                   placeholder="Password"
+                  v-model="formSignup.password"
+                  :rules="formSignup.passwordRules"
+                  type="password"
+                  name="password"
+                  required
                 ></v-text-field>
               </v-col>
               <v-col lg="12">
-                <a href="#" class="btn-inset light__blue full"><i>Sign up</i></a>
+                <a href="#" class="btn-inset light__blue full" @click.prevent="submitForm"><i>Sign up</i></a>
               </v-col>
             </v-row>
           </v-container>
@@ -54,8 +63,25 @@
 export default {
   name: 'HeroSection',
   data: () => ({
-    
+    formSignup: {
+      email: null,
+      emailRules: [
+          v => !!v || 'E-mail is required',
+          v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+      ],
+      password: null,
+      passwordRules: [
+        v => !!v || 'Password is required'
+      ]
+    },
+    isValid: false
   }),
+  methods: {
+    submitForm() {
+      this.$refs.formSignup.validate();
+      /** Logic signup */           
+    }
+  }
 };
 </script>
 
