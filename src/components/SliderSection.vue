@@ -8,9 +8,7 @@
       <img src="@/assets/icons/iconset-slider.png" alt="">
     </v-col>
     <v-col lg="12" class="pa-0">
-      <div class="hold-slider">
-        
-      </div>
+      <div class="hold-slider"></div>
     </v-col>
   </v-row>
 </template>
