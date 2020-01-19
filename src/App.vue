@@ -38,6 +38,8 @@ export default {
 };
 </script>
 <style lang="scss">
+
+  @import './assets/styles/slick.css';
   @import 'https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap';
   @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap';
 
