@@ -45,7 +45,7 @@ export default {
   body{
 
     .v-content{
-      background-attachment: fixed;
+      // background-attachment: fixed;
       background-image: 
           url('./assets/icons/general-shadow.png'),
           url('./assets/icons/bg-icons.png');
@@ -79,15 +79,20 @@ export default {
   }
 
   /** General landing elements */
-
-  
-  h1{
+  h1,h2{
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
+    color: #0046FE;
+  }
+  
+  h1{
     font-size: 72px;
     line-height: 80px;
-    color: #0046FE;
+  }
+  h2{
+    font-size: 64px;
+    line-height: 80px;
   }
   p{
     font-family: "Open Sans";
@@ -98,7 +103,7 @@ export default {
     color: #828282;
   }
   .btn-inset{
-    max-width: 299px;
+    width: 299px;
     min-height: 103px;
     line-height: 103px;
     text-decoration: none;
@@ -120,7 +125,7 @@ export default {
     border-radius: 20px;
 
     &.full{
-      max-width: 100%;
+      width: 100%;
 
       i{
         min-width: 92%;
@@ -143,6 +148,16 @@ export default {
         4px 4px 20px rgba(25, 0, 180, 0.2);
       }
     }
+    &.light__purple{
+      i{
+        background: #C228D6;
+        box-shadow: -6px -6px 16px #FFFFFF,
+        6px 6px 16px rgba(221, 219, 216, 0.4),
+        4px 4px 50px rgba(194, 40, 214, 0.2);
+      }
+    }
+
+    
 
     i{
       font-style: normal;

@@ -60,7 +60,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.hero-wrap{
+  margin-bottom: 128px;
+}
 
 .head-bar{
   margin-bottom: 116px;
