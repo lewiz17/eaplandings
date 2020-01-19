@@ -1,13 +1,13 @@
 <template>
-  <v-row>
-    <v-col lg="7" class="pa-0 video-section">
-      <h2>Build a resume that you can be proud of</h2>
+  <v-row class="video-wrap">
+    <v-col lg="7" class="video-section">
+      <span class="title-two">Build a resume that you can be proud of</span>
       <p>100+ Integrations. Ensure your clients can easily contract, hire and pay you.</p>
     </v-col>
     <v-col lg="5" class="pa-0 vicon-set">
       <img src="@/assets/icons/iconset-video.png" alt="">
     </v-col>
-    <v-col lg="12" class="pa-0 video-wrap">
+    <v-col lg="12" class="pa-0 player-wrap">
       <div class="hold-video">
         <div class="video__poster">
           <a href="#"><v-icon>mdi-play-circle</v-icon></a>
@@ -29,12 +29,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.video-wrap{
+  margin-bottom: 70px;
+}
 
 .video-section{
-  h2{
-    padding-top: 116px;
-  }
+
+  padding-top: 116px;
+
   p{
     padding-top: 30px;
   }
@@ -45,7 +47,7 @@ export default {
   display: flex;
 }
 
-.video-wrap{
+.player-wrap{
   justify-content: center;
   align-items: center;
   display: flex;

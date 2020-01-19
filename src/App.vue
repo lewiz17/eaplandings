@@ -79,7 +79,7 @@ export default {
   }
 
   /** General landing elements */
-  h1,h2{
+  h1,.title-two{
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -90,7 +90,7 @@ export default {
     font-size: 72px;
     line-height: 80px;
   }
-  h2{
+  .title-two{
     font-size: 64px;
     line-height: 80px;
   }
