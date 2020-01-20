@@ -148,45 +148,48 @@
     padding: 0 0 2% 0;
 }
 .hold-slider .slick-slide .item-resume{
-    display: block;
     box-shadow: -6px -6px 16px #FFFFFF, 
     6px 6px 16px rgba(209, 205, 199, 0.4), 
     inset 6px 4px 12px rgba(0, 0, 0, 0.25), 
     inset -6px -4px 12px #FFFFFF;
     border-radius: 15px;
-    padding: 15px 20px;
-    transition: all 0.5s linear;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
 }
 
 .hold-slider .slick-slide {
-    width: 338px;
-    height: 410px;
+    width: 383px;
+    height: 418px;
     margin-right: 64px;
-    transition: width 0.5s linear;
-    display: inline-block !important;
+    transition: all 0.5s ease-in-out;
+    display: inline-flex;
     float: none;
+    vertical-align: top;
+    align-items: flex-end;
 }
 
 .hold-slider .slick-slide.slick-current{
     width: 612px;
     max-width: 100%;
+    padding: 0px;
+}
+
+.hold-slider .slick-slide.slick-current .item-resume{
+    min-width: 612px;
 }
 
 .hold-slider .slick-slide img{
     width: 100%;
     height: 247px;
     border-radius: 15px;
-    transition: all 0.5s linear;
+    transition: all 0.5s ease-in-out;
 }
 .hold-slider .slick-slide.slick-current img{
     width: 100%;
     height: 380px;
 }
 
-.hold-slider .slick-slide:not(.slick-current) {
-    display: inline-flex;
-    align-items: flex-end;
-}
+
 .hold-slider .slick-dots{
     padding: 0px !important;
 }

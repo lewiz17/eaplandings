@@ -48,14 +48,11 @@ export default {
 
     .v-content{
       // background-attachment: fixed;
-      background-image: 
-          url('./assets/icons/general-shadow.png'),
-          url('./assets/icons/bg-icons.png');
-      background-position:
-          0 150px,
-          0 50px;
+      background-image: url('./assets/icons/bg-alls.png');
+      background-position: 0 83px;
       background-repeat: no-repeat;
-      background-size: contain;
+      // background-size: cover;
+      background-color: #f8f8f8;
     }
     
   }
@@ -163,9 +160,9 @@ export default {
         4px 4px 50px rgba(194, 40, 214, 0.2);
       }
     }
-    &.light__green{
+    &.light__green{ 
       i{
-        background: #00EEE0;
+        background: #00E4D7;
         box-shadow: -6px -6px 16px #FFFFFF,
         6px 6px 16px rgba(221, 219, 216, 0.4),
         4px 4px 50px rgba(0, 238, 224, 0.2);

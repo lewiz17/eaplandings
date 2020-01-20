@@ -2,7 +2,7 @@
   <v-row class="video-wrap">
     <v-col lg="7" class="video-section">
       <span class="title-two">Build a resume that you can be proud of</span>
-      <p>100+ Integrations. Ensure your clients can easily contract, hire and pay you.</p>
+      <p>100+ Integrations. Ensure your clients can easily contact, hire and pay you.</p>
     </v-col>
     <v-col lg="5" class="pa-0 vicon-set">
       <img src="@/assets/icons/iconset-video.png" alt="">

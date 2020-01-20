@@ -1,8 +1,8 @@
 <template>
   <v-row class="slider-wrap">
     <v-col lg="9" class="text-section">
-      <span class="title-two">20+ Beautiful Themes  to choose from</span>
-      <p>Add your data and then applyany theme tj make your resume visually amazing. Ensure that you stand out  and make a great first impression with any hiring manager.</p>
+      <span class="title-two">20+ Beautiful Themes to choose from</span>
+      <p>Make your resume visually amazing. Ensure that you stand out<br/>and make a great first impression with any hiring manager.</p>
     </v-col>
     <v-col lg="3" class="pa-0 iconset-slider">
       <img src="@/assets/icons/iconset-slider.png" alt="">
@@ -88,6 +88,7 @@ export default {
 
 .slider-section{
   margin-top: 75px;
+  margin-bottom: 200px;
 }
 
 .hold-slider{

@@ -7,7 +7,7 @@
     </v-col>
     <v-col lg="6" sm="12" class="pa-0 intro-section">
       <h1>Make Your Online Resume</h1>
-      <p>We believe that resume’s can look beautiful, we halp freelancers, contractors & jobseekers create stunning online resume’s.</p>
+      <p>We believe that resume’s can look beautiful, we help freelancers, contractors &amp; jobseekers create stunning online resume’s.</p>
       <a href="#" class="btn-inset light__red"><i>Get started</i></a>
     </v-col>
     <v-col lg="6" sm="12" class="pa-0 form-wrap">
