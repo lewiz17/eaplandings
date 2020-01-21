@@ -83,6 +83,7 @@ export default {
   border-radius: 15px;
   margin-bottom: 40px;
   border: 1px solid #fff;
+  background: #f8f8f8;
 
 
   .profile_picture{
@@ -165,6 +166,7 @@ export default {
     border: 0;
     align-items: flex-start;
     padding: 0 2%;
+    background: transparent;
 
     .profile_picture{
       min-width: 156px;

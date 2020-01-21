@@ -1,10 +1,10 @@
 <template>
   <v-row class="video-wrap">
-    <v-col lg="7" class="video-section">
+    <v-col lg="7" sm="12" class="video-section">
       <span class="title-two">Build a resume that you can be proud of</span>
       <p>100+ Integrations. Ensure your clients can easily contact, hire and pay you.</p>
     </v-col>
-    <v-col lg="5" class="pa-0 vicon-set">
+    <v-col lg="5" sm="12" class="pa-0 vicon-set">
       <img src="@/assets/icons/iconset-video.png" alt="">
     </v-col>
     <v-col lg="12" class="pa-0 player-wrap">
@@ -38,6 +38,34 @@ export default {
 <style lang="scss" scoped>
 .video-wrap{
   margin-bottom: 70px;
+  @media screen and (max-width: 769px) {
+    .video-section{
+      text-align: center;
+    }
+
+
+    .vicon-set{
+      order: 3;
+
+      img{
+        max-width: 260px;
+      }
+    }
+
+    .player-wrap{
+
+      .hold-video{
+        min-height: 484px;
+        max-height: 484px;
+
+        .video__poster,video{
+          min-height: 450px;
+        }
+        
+      }
+    }
+  }
+
 }
 
 .video-section{

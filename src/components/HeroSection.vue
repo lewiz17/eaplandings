@@ -1,6 +1,6 @@
 <template>
   <v-row class="hero-wrap">
-    <v-col lg="12" class="pa-0 head-bar">
+    <v-col lg="12" sm="12" class="pa-0 head-bar">
       <a href="#">
         <img src="@/assets/icons/logo.png" alt="">
       </a>
@@ -8,7 +8,7 @@
     <v-col lg="6" sm="12" class="pa-0 intro-section">
       <h1>Make Your Online Resume</h1>
       <p>We believe that resume’s can look beautiful, we help freelancers, contractors &amp; jobseekers create stunning online resume’s.</p>
-      <a href="#" class="btn-inset light__red"><i>Get started</i></a>
+      <a href="#" class="btn-inset light__red hideOnTab"><i>Get started</i></a>
     </v-col>
     <v-col lg="6" sm="12" class="pa-0 form-wrap">
       <div class="hold-form">
@@ -28,7 +28,7 @@
         <v-form ref="formSignup" v-model="isValid">
           <v-container>
             <v-row>
-              <v-col lg="12">
+              <v-col lg="12" sm="12">
                 <v-text-field
                   placeholder="Email"
                   v-model="formSignup.email"
@@ -37,7 +37,7 @@
                   required
                 ></v-text-field>
               </v-col>
-              <v-col lg="12">
+              <v-col lg="12" sm="12">
                 <v-text-field
                   placeholder="Password"
                   v-model="formSignup.password"
@@ -47,7 +47,7 @@
                   required
                 ></v-text-field>
               </v-col>
-              <v-col lg="12">
+              <v-col lg="12" sm="12">
                 <a href="#" class="btn-inset light__blue full" @click.prevent="submitForm"><i>Sign up</i></a>
               </v-col>
             </v-row>
@@ -88,6 +88,38 @@ export default {
 <style lang="scss" scoped>
 .hero-wrap{
   margin-bottom: 128px;
+
+  @media screen and (max-width: 769px) {
+    text-align: center;
+
+    .head-bar{
+      margin-bottom: 65px;
+    }
+
+    .intro-section h1{
+      margin: 0 auto;
+      padding-top: 0;
+    }
+
+    .form-wrap{
+      justify-content: center;
+
+      .hold-form{
+        max-width: 100%;
+        width: 100%;
+        padding: 40px 0px;
+
+        .v-form{
+          width: 90%;
+        }
+
+        .social-wrap{
+          max-width: 460px;
+        }
+      }
+
+    }
+  }
 }
 
 .head-bar{

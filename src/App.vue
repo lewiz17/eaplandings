@@ -47,14 +47,23 @@ export default {
   body{
 
     .v-content{
-      // background-attachment: fixed;
-      background-image: url('./assets/icons/bg-alls.png');
-      background-position: 0 83px;
+      background-image: url('./assets/icons/bg-landing-final.png');
+      background-position: 0 53px;
       background-repeat: no-repeat;
-      // background-size: cover;
       background-color: #f8f8f8;
+
+      @media screen and (max-width: 769px) {
+        background-color: #fff;
+        background-image: url('./assets/icons/bg-landing-tablet.png');
+      }
     }
     
+  }
+  .hideOnTab{
+    display: block;
+    @media screen and (max-width: 769px) {
+      display: none !important;
+    }
   }
 
   .container{
@@ -66,6 +75,12 @@ export default {
     @media (min-width: 1904px){
       max-width: 81%;
     }
+    @media screen and (max-width: 769px) {
+      width: 95%;
+      margin: 0px 20px !important;
+    }
+
+            
 
   }
 

@@ -10,14 +10,14 @@
     <v-col lg="12" class="pa-0 slider-section">
       <div class="hold-slider">
         <slick ref="slick" :options="slickOptions">
-          <div class="item-resume">
-            <img src="@/assets/imgs/slide1.png" alt=""/>
-          </div>
-          <div class="item-resume">
+          <div class="slide-resume">
             <img src="@/assets/imgs/slide2.png" alt=""/>
           </div>
-          <div class="item-resume">
+          <div class="slide-resume">
             <img src="@/assets/imgs/slide3.png" alt=""/>
+          </div>
+          <div class="slide-resume">
+            <img src="@/assets/imgs/slide2.png" alt=""/>
           </div>
         </slick>
         <div class="nav-slider">
@@ -41,13 +41,13 @@ export default {
   },
   data: () => ({
     slickOptions: {
-      dots: true,
-      arrows: false,
-      adaptiveHeight: false,
+      slidesToScroll: 1,
       infinite: true,
       variableWidth: true,
-      speed: 800,
-      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      swipe: true,
+      speed: 1200,
       appendDots: '.navDots'
     }
   }),
@@ -57,6 +57,9 @@ export default {
     },
     prev() {
         this.$refs.slick.prev();
+    },
+    reInit() {
+        this.$refs.slick.reSlick()
     }
   }
   
@@ -93,6 +96,7 @@ export default {
 
 .hold-slider{
   position: relative;
+  overflow: hidden;
 
   .nav-slider{
     width: 431px;
