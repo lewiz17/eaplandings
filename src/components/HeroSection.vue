@@ -91,14 +91,29 @@ export default {
 
   @media screen and (max-width: 769px) {
     text-align: center;
+    margin-bottom: 50px;
 
     .head-bar{
       margin-bottom: 65px;
+
+      a{
+        img{
+          min-width: 316.4px;
+          max-height: 53px;
+        }
+      }
     }
 
-    .intro-section h1{
-      margin: 0 auto;
-      padding-top: 0;
+    .intro-section{
+
+      h1{
+        margin: 0 auto;
+        padding-top: 0;
+      } 
+      p{
+        margin-bottom: 0px;
+      }
+
     }
 
     .form-wrap{

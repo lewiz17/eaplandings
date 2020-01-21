@@ -184,6 +184,7 @@
     width: 612px !important;
     min-height: 430px;
     padding: 0px;
+
 }
 .hold-slider .slick-slide.slick-current img{
     min-height: 380px;
@@ -211,4 +212,53 @@
 }
 
 
+/** Custom Fixes tab version carousel **/
+@media screen and (max-width: 769px) {
 
+    .hold-slider .slick-track{
+        min-height: 350px;
+    }
+    .hold-slider .slick-slide{
+        width: 279px !important;
+        height: 186.45px;
+        margin-right: 16px;
+    }
+    .hold-slider .slick-slide img{
+        min-height: 171.92px;
+    }
+    
+    .hold-slider .slick-slide.slick-current{
+        width: 472px !important;
+        min-height: 314px;
+    }
+    .hold-slider .slick-slide.slick-current .slide-resume{
+        min-width: 472px;
+    }
+    .hold-slider .slick-slide.slick-current img{
+        min-height: 295px;
+    }
+
+    .hold-slider .slick-slide .slide-resume{
+        padding: 7.2px 10.9px;
+        border: 2px solid #fff;
+    }
+
+    .hold-slider .slick-dots button{
+        width: 11.51px;
+        height: 11.51px;
+        background: rgba(15, 76, 238, 0.2);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(42.63deg);
+    }
+    .hold-slider .slick-dots li{
+        margin: 0 5px;
+    }
+    .hold-slider .slick-dots .slick-active button{
+        background: #0F4CEE;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(42.63deg);
+    }
+
+
+
+}

@@ -76,6 +76,7 @@ export default {
       max-width: 81%;
     }
     @media screen and (max-width: 769px) {
+      padding: 40px 12px 148px 12px;
       width: 95%;
       margin: 0px 20px !important;
     }
@@ -107,11 +108,22 @@ export default {
   .title-two{
     font-size: 64px;
     line-height: 80px;
+
+    @media screen and (max-width: 769px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
   .title-three{
     font-size: 52px;
     line-height: 63px;
     color: #0F4CEE;
+
+    @media screen and (max-width: 769px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
   }
   p{
     font-family: "Open Sans";
@@ -241,6 +253,22 @@ export default {
     }
 
     padding-bottom: 10px;
+
+    @media screen and (max-width: 769px) {
+
+      input{
+        padding-left: 55px;
+      }
+
+    }
   }
+
+.v-carousel{
+  .v-responsive__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 
 </style>

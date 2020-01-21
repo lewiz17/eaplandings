@@ -41,6 +41,33 @@ export default {
   flex-flow: column;
   align-items: center;
 
+
+  @media screen and (max-width: 769px) {
+    .follow-section{
+
+      margin-bottom: 85px !important;
+
+      .item-follow{
+        margin: 0px 2% !important;
+
+      }
+    }
+
+    .social-section{
+      min-width: 475px !important;
+
+      a{
+        width: 72.6px !important;
+        height: 72.6px !important;
+
+        img{
+          max-width: 32.1px;
+        }
+      }
+    }
+
+  }
+
   .follow-section{
     width: 100%;
     display: flex;

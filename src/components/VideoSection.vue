@@ -40,12 +40,19 @@ export default {
   margin-bottom: 70px;
   @media screen and (max-width: 769px) {
     .video-section{
+      padding-top: 0px;
       text-align: center;
+
+      p{
+        max-width: 520px;
+        margin: 0px auto;
+      }
     }
 
 
     .vicon-set{
       order: 3;
+      margin-top: 52px;
 
       img{
         max-width: 260px;
@@ -55,10 +62,13 @@ export default {
     .player-wrap{
 
       .hold-video{
-        min-height: 484px;
+        min-height: auto;
         max-height: 484px;
+        padding: 7px;
+        margin-top: 45px;
 
         .video__poster,video{
+          min-width: calc(100% - 13px);
           min-height: 450px;
         }
         

@@ -1,13 +1,13 @@
 <template>
   <v-row class="slider-wrap">
-    <v-col lg="9" class="text-section">
+    <v-col lg="9" sm="12" class="text-section">
       <span class="title-two">20+ Beautiful Themes to choose from</span>
       <p>Make your resume visually amazing. Ensure that you stand out<br/>and make a great first impression with any hiring manager.</p>
     </v-col>
-    <v-col lg="3" class="pa-0 iconset-slider">
+    <v-col lg="3" sm="12" class="pa-0 iconset-slider">
       <img src="@/assets/icons/iconset-slider.png" alt="">
     </v-col>
-    <v-col lg="12" class="pa-0 slider-section">
+    <v-col lg="12" sm="12" class="pa-0 slider-section">
       <div class="hold-slider">
         <slick ref="slick" :options="slickOptions">
           <div class="slide-resume">
@@ -48,7 +48,16 @@ export default {
       dots: true,
       swipe: true,
       speed: 1200,
-      appendDots: '.navDots'
+      appendDots: '.navDots',
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+      ]
     }
   }),
   methods: {
@@ -67,6 +76,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.slider-wrap{
+
+  @media screen and (max-width: 769px) {
+    overflow: hidden;
+    text-align: center;
+
+    .iconset-slider{
+      justify-content: center;
+      order: 3;
+
+      img{
+        margin: 0;
+        max-width: 250px;
+      }
+    }
+    .text-section{
+      padding-top: 0;
+
+      p{
+        margin-bottom: 0;
+      }
+    }
+
+
+    .slider-section{
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+  }
+  
+}
 
 .text-section{
   padding-top: 156px;
@@ -125,7 +166,24 @@ export default {
     .nav-slider{
       left: 53%;
     }
-    
+  }
+  @media screen and (max-width: 769px) {
+
+    .nav-slider{
+      max-width: 162px;
+      top: 50px;
+      right: 45px;
+      left: auto;
+
+      a{
+        width: 29.79px;
+        height: 29.79px;
+
+        img{
+          max-width: 13.14px;
+        }
+      }
+    }
   }
 }
 
