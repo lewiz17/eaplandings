@@ -129,7 +129,7 @@ export default {
       font-weight: 300;
       font-size: 25px;
       line-height: 34px;
-      color: #898989;
+      color: #575757;
 
       a{
         width: 67px;

@@ -172,6 +172,7 @@
     float: none;
     vertical-align: top;
     align-items: flex-end;
+    outline: none;
 }
 .hold-slider .slick-slide img{
     width: 100%;

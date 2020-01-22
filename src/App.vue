@@ -127,6 +127,7 @@ export default {
     font-style: normal;
     font-weight: bold;
     color: #272944;
+    text-transform: capitalize;
   }
   
   h1{
@@ -206,6 +207,7 @@ export default {
     box-shadow: inset 6px 4px 10px rgba(185, 185, 185, 0.6), 
     inset -6px -4px 16px #FFFFFF;
     border-radius: 20px;
+    transition: all 200ms ease;
 
     &.full{
       width: 100%;
@@ -262,7 +264,7 @@ export default {
     }
 
     &:hover{
-      opacity: .8;
+      transform: scale(1.05);
     }
 
     @media only screen 
