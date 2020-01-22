@@ -166,7 +166,7 @@ export default {
       text-align: center;
       line-height: 120px;
       border: 40px solid #2410A4;
-      transition: all .3s ease-in-out;
+      transition: all 300ms ease;
 
       &:hover{
         transform: scale(1.1);
