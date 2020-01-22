@@ -276,6 +276,7 @@
     }
     .hold-slider .slick-slide .slide-resume{
         padding: 5px;
+        border-radius: 10px;
     }
 
     .hold-slider .slick-slide{
@@ -285,6 +286,7 @@
     }
     .hold-slider .slick-slide img{
         min-height: 140px;
+        border-radius: 10px;
     }
     .hold-slider .slick-track{
         min-height: 240px;
