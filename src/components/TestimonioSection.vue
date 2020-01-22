@@ -34,7 +34,7 @@
     </v-col>
     <v-col lg="7" sm="12" class="pa-0 author-comment">
       <div class="item-top">
-        <v-carousel v-model="carouselState" :show-arrows="false" :hide-delimiters="true" height="350">
+        <v-carousel v-model="carouselState" :show-arrows="false" :hide-delimiters="true" height="auto">
           <v-carousel-item>
             <span class="profile_picture"></span>
             <div class="top-info">
@@ -250,6 +250,26 @@ export default {
 
         }
       }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 680px){
+    .author-comment{
+        
+      .item-top{
+        .top-info{
+          min-width: 22em !important;
+          max-width: 22em !important;
+        }
+
+        // .v-carousel{
+
+        //   .v-carousel__item{
+        //     min-height: 100% !important;
+        //   }
+        //   min-height: 380px !important;
+        // }
+      }
+    }
   }
 
 }

@@ -101,6 +101,17 @@ export default {
           min-width: calc(100% - 14px);
           min-height: 250px;
         }
+
+        .video__poster a{
+          max-width: 80px;
+          max-height: 80px;
+          line-height: 40px;
+          border: 10px solid #2410A4;
+
+          i{
+            font-size: 60px;
+          }
+        }
         
       }
     }

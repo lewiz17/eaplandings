@@ -105,6 +105,14 @@ export default {
     }
   }
 
+  @media screen and (min-width: 481px) and (max-width: 680px){
+    .follow-section{
+      .item-follow{
+        font-size: 1em !important;
+      }
+    }
+  }
+
   .follow-section{
     width: 100%;
     display: flex;

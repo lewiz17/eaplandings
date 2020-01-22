@@ -289,7 +289,7 @@
         border-radius: 10px;
     }
     .hold-slider .slick-track{
-        min-height: 240px;
+        min-height: 240px !important;
     }
     .hold-slider .nav-slider{
         top: 0px !important;
@@ -297,3 +297,16 @@
         left: 30% !important;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 680px){
+
+    .hold-slider .slick-track{
+        min-height: 380px;
+    }
+
+    .hold-slider .nav-slider{
+        max-width: 170px !important;
+        top: 0px !important;
+        right: 35% !important;
+    }
+} 
