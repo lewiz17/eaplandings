@@ -61,6 +61,7 @@ export default {
       @media screen and (max-width: 769px) {
         background-color: #fff;
         background-image: url('./assets/icons/bg-landing-tablet.png');
+        background-position: bottom;
       }
     }
     
@@ -90,7 +91,7 @@ export default {
     and (min-device-width: 320px) 
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2) {
-      
+
       margin: 0px 10px !important;
       padding: 30px 12px 100px 12px;
     }
