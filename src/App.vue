@@ -44,6 +44,12 @@ export default {
   @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap';
 
 
+  /** General carousel duration scroll transition */
+  .v-window-x-transition-enter-active,
+  .v-window-x-transition-leave-active{
+    transition-duration: 1.5s
+  }
+
   body{
 
     .v-content{
@@ -80,6 +86,14 @@ export default {
       width: 95%;
       margin: 0px 20px !important;
     }
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      
+      margin: 0px 10px !important;
+      padding: 30px 12px 100px 12px;
+    }
 
             
 
@@ -91,6 +105,18 @@ export default {
     display: flex;
     background: #0F4CEE;
     min-height: 255px;
+
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      min-height: 140px;
+
+      img{
+        max-width: 250px;
+      }
+    }
+
   }
 
   /** General landing elements */
@@ -113,6 +139,14 @@ export default {
       font-size: 50px;
       line-height: 60px;
     }
+
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
   .title-three{
     font-size: 52px;
@@ -124,6 +158,14 @@ export default {
       line-height: 60px;
     }
 
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
   }
   p{
     font-family: "Open Sans";
@@ -132,6 +174,14 @@ export default {
     font-size: 24px;
     line-height: 36px;
     color: #828282;
+
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
   .btn-inset{
     width: 299px;
@@ -212,6 +262,23 @@ export default {
     &:hover{
       opacity: .8;
     }
+
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+      min-height: 60px;
+      line-height: 60px;
+
+      i{
+        min-height: 45px;
+        line-height: 45px;
+      }
+
+
+    }
+
   }
 
   .form-wrap{
@@ -261,6 +328,19 @@ export default {
       }
 
     }
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      
+      padding-bottom: 0;
+      padding-top: 0;
+
+      input{
+        padding-left: 30px;
+        min-height: 50px;
+      }
+    }
   }
 
 .v-carousel{
@@ -270,5 +350,7 @@ export default {
     align-items: flex-start;
   }
 }
+
+
 
 </style>

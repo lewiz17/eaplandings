@@ -76,6 +76,27 @@ export default {
     }
   }
 
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    margin-bottom: 45px;
+
+    .player-wrap{
+
+      .hold-video{
+
+        min-height: 250px;
+
+        .video__poster,video{
+          min-width: calc(100% - 14px);
+          min-height: 250px;
+        }
+        
+      }
+    }
+  }
+
 }
 
 .video-section{

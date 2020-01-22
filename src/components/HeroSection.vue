@@ -135,6 +135,54 @@ export default {
 
     }
   }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .head-bar{
+      margin-bottom: 45px;
+    }
+
+    .intro-section{
+      h1{
+        font-size: 50px;
+        line-height: 55px;
+      }
+      p{
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    .hold-form{
+      .title-form{
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+
+    .social-wrap{
+
+      width: 80%;
+
+      a{
+        min-width: 45px;
+        min-height: 45px;
+      }
+    }
+
+    .v-form{
+      .container{
+        >.row{
+          flex-flow: column;
+        }
+      }
+    }
+
+
+  }
+
 }
 
 .head-bar{

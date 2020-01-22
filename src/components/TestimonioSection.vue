@@ -34,7 +34,7 @@
     </v-col>
     <v-col lg="7" sm="12" class="pa-0 author-comment">
       <div class="item-top">
-        <v-carousel v-model="carouselState"  :show-arrows="false" :hide-delimiters="true" height="auto">
+        <v-carousel v-model="carouselState" :show-arrows="false" :hide-delimiters="true" height="290">
           <v-carousel-item>
             <span class="profile_picture"></span>
             <div class="top-info">
@@ -197,6 +197,55 @@ export default {
 
 
   }
+
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      .author-comment{
+        
+        .item-top{
+          padding: 0px;
+
+          .profile_picture{
+            min-width: 100px;
+            height: 100px;
+            background-size: 85px;
+          }
+
+          .top-info{
+
+            min-width: 240px;
+            max-width: 240px;
+
+            p{
+              margin-top: 18px;
+              margin-bottom: 0px;
+              font-size: 16px;
+              line-height: 25px;
+            }
+
+            .profile_name{
+              font-size: 20px;
+              line-height: 25px;
+            }
+            .profile_job{
+              font-size: 16px;
+              line-height: 16px;
+              padding-top: 10px;
+            }
+
+            .link_see{
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+
+        }
+      }
+  }
+
 }
 
 .top-resumes{

@@ -68,6 +68,43 @@ export default {
 
   }
 
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .follow-section{
+      flex-flow: column;
+      align-items: flex-start;
+      margin-bottom: 40px !important;
+
+      .item-follow{
+        width: 80%;
+        margin-bottom: 10px !important;
+
+        a{
+          width: 50px !important;
+          height: 50px !important;
+          line-height: 50px !important;
+        }
+      }
+    }
+
+
+    .social-section{
+      min-width: 90% !important;
+
+      a{
+        width: 50.6px !important;
+        height: 50.6px !important;
+
+        img{
+          max-width: 20.1px;
+        }
+      }
+    }
+  }
+
   .follow-section{
     width: 100%;
     display: flex;
