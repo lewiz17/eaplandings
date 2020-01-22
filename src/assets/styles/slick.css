@@ -292,7 +292,7 @@
         min-height: 240px;
     }
     .hold-slider .nav-slider{
-        top: 5px !important;
+        top: 0px !important;
         right: auto !important;
         left: 30% !important;
     }
