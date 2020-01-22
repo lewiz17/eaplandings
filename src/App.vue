@@ -61,7 +61,8 @@ export default {
       @media screen and (max-width: 769px) {
         background-color: #fff;
         background-image: url('./assets/icons/bg-landing-tablet.png');
-        background-position: bottom;
+        background-position: center 0px;
+        
       }
     }
     
