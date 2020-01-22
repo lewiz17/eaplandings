@@ -217,8 +217,8 @@ export default {
 
           .top-info{
 
-            min-width: 240px;
-            max-width: 240px;
+            max-width: 70%;
+            min-width: auto;
 
             p{
               margin-top: 18px;
