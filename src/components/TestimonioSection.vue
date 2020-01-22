@@ -209,10 +209,10 @@ export default {
           padding: 0px;
 
           .profile_picture{
-            min-width: 90px;
-            width: 90px;
-            height: 90px;
-            background-size: 75px;
+            min-width: 26%;
+            width: 10%;
+            height: 28%;
+            background-size: 80%;
           }
 
           .top-info{
