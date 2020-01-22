@@ -269,12 +269,12 @@ export default {
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2) {
 
-      min-height: 60px;
-      line-height: 60px;
+      min-height: 95px;
+      line-height: 95px;
 
       i{
-        min-height: 45px;
-        line-height: 45px;
+        min-height: 65px;
+        line-height: 65px;
       }
 
 

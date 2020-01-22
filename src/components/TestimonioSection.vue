@@ -209,9 +209,10 @@ export default {
           padding: 0px;
 
           .profile_picture{
-            min-width: 100px;
-            height: 100px;
-            background-size: 85px;
+            min-width: 90px;
+            width: 90px;
+            height: 90px;
+            background-size: 75px;
           }
 
           .top-info{
@@ -222,7 +223,7 @@ export default {
             p{
               margin-top: 18px;
               margin-bottom: 0px;
-              font-size: 16px;
+              font-size: 14px;
               line-height: 25px;
             }
 
@@ -237,8 +238,13 @@ export default {
             }
 
             .link_see{
-              font-size: 16px;
+              font-size: 14px;
+              margin-top: 10px;
               line-height: 16px;
+
+              i{
+                font-size: 25px;
+              }
             }
           }
 

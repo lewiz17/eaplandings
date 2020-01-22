@@ -82,6 +82,14 @@ export default {
   and (-webkit-min-device-pixel-ratio: 2) {
     margin-bottom: 45px;
 
+    .vicon-set{
+
+
+      img{
+        max-height: 203px;
+      }
+    }
+
     .player-wrap{
 
       .hold-video{
