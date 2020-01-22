@@ -172,7 +172,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 45%;
 
     a{

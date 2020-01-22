@@ -53,15 +53,15 @@ export default {
   body{
 
     .v-content{
-      background-image: url('./assets/icons/bg-landing-final.png');
+      background-image: url('./assets/icons/new-background.png');
       background-position: 0 53px;
       background-repeat: no-repeat;
       background-color: #f8f8f8;
 
       @media screen and (max-width: 769px) {
         background-color: #fff;
-        background-image: url('./assets/icons/bg-landing-tablet.png');
-        background-position: center 8.5em;
+        background-image: url('./assets/icons/bg-new-tablet.png');
+        background-position: center 6em;
         
       }
     }
@@ -85,7 +85,7 @@ export default {
     }
     @media screen and (max-width: 769px) {
       padding: 40px 12px 148px 12px;
-      width: 95%;
+      width: auto;
       margin: 0px 20px !important;
     }
     @media only screen 
@@ -106,7 +106,7 @@ export default {
     align-items: center;
     display: flex;
     background: #0F4CEE;
-    min-height: 255px;
+    min-height: 150px;
 
     @media only screen 
     and (min-device-width: 320px) 
@@ -126,7 +126,7 @@ export default {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
-    color: #0046FE;
+    color: #272944;
   }
   
   h1{
@@ -153,7 +153,7 @@ export default {
   .title-three{
     font-size: 52px;
     line-height: 63px;
-    color: #0F4CEE;
+    color: #272944;
 
     @media screen and (max-width: 769px) {
       font-size: 50px;
@@ -175,7 +175,7 @@ export default {
     font-weight: 300;
     font-size: 24px;
     line-height: 36px;
-    color: #828282;
+    color: #575757;
 
     @media only screen 
     and (min-device-width: 320px) 

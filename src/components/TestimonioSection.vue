@@ -29,12 +29,12 @@
         </div>
       </div>
 
-      <a href="#" class="btn-inset light__green"><i>Get started</i></a>
+      <a href="#" class="btn-inset light__red"><i>Get started</i></a>
 
     </v-col>
     <v-col lg="7" sm="12" class="pa-0 author-comment">
       <div class="item-top">
-        <v-carousel v-model="carouselState" :show-arrows="false" :hide-delimiters="true" height="290">
+        <v-carousel v-model="carouselState" :show-arrows="false" :hide-delimiters="true" height="350">
           <v-carousel-item>
             <span class="profile_picture"></span>
             <div class="top-info">
@@ -58,7 +58,7 @@
               <span class="profile_job">Ui Designer</span>
               <a href="#" class="link_see" v-show="windowWidth > 769">View resume <v-icon>mdi-eye</v-icon></a>
               <p>Design and build your own higt-quality wabsites. Whether you’re 
-                promoting your bussines, showcasing your work,opening 
+                promoting your bussines,<br> showcasing your work,opening 
                 your store or starting a blog you can do it all with 
                 the 123 resume builder.</p> 
               <a href="#" class="link_see" v-show="windowWidth <= 769">View resume <v-icon>mdi-eye</v-icon></a>        
@@ -71,7 +71,7 @@
               <span class="profile_job">Ui Designer</span>
               <a href="#" class="link_see" v-show="windowWidth > 769">View resume <v-icon>mdi-eye</v-icon></a>
               <p>Design and build your own higt-quality wabsites. Whether you’re 
-                promoting your bussines, showcasing your work,opening 
+                promoting your bussines,<br/> showcasing your work,opening 
                 your store or starting a blog you can do it all with 
                 the 123 resume builder.</p>
               <a href="#" class="link_see" v-show="windowWidth <= 769">View resume <v-icon>mdi-eye</v-icon></a>          
@@ -83,7 +83,7 @@
             <a href="#" @click.prevent="carouselState--"><img src="../assets/icons/arrow-left.png" alt=""></a>
             <a href="#" @click.prevent="carouselState++"><img src="../assets/icons/arrow-next.png" alt=""></a>
           </div>
-          <a href="#" class="btn-inset light__green"><i>Get started</i></a>
+          <a href="#" class="btn-inset light__red"><i>Get started</i></a>
         </div>
         <div class="nav-carousel" v-else>
           <a href="#" class="link_next" @click.prevent="carouselState++">Next comment <span><img src="@/assets/icons/arrow-next.png" alt=""/></span></a>
@@ -301,7 +301,7 @@ export default {
       font-size: 24px;
       line-height: 24px;
       letter-spacing: 0.1em;
-      color: #2E64F0;
+      color: #272944;
     }
     .profile_job{
       display: block;
@@ -309,7 +309,7 @@ export default {
       font-size: 18px;
       line-height: 18px;
       letter-spacing: 0.1em;
-      color: #898989;
+      color: #575757;
       padding-top: 15px;
       padding-bottom: 15px;
     }
@@ -379,6 +379,7 @@ export default {
         font-size: 24px;
         line-height: 24px;
         padding-bottom: 0;
+        font-weight: bold;
       }
 
       .link_see{
@@ -413,7 +414,7 @@ export default {
     margin-top: 120px;
     font-family: "Montserrat";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 0.1em;

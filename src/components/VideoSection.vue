@@ -1,20 +1,20 @@
 <template>
   <v-row class="video-wrap">
-    <v-col lg="7" sm="12" class="video-section">
+    <v-col lg="7" sm="12" cols="12" class="video-section">
       <span class="title-two">Build a resume that you can be proud of</span>
       <p>100+ Integrations. Ensure your clients can easily contact, hire and pay you.</p>
     </v-col>
-    <v-col lg="5" sm="12" class="pa-0 vicon-set">
+    <v-col lg="5" sm="12" cols="12" class="pa-0 vicon-set">
       <img src="@/assets/icons/iconset-video.png" alt="">
     </v-col>
-    <v-col lg="12" class="pa-0 player-wrap">
+    <v-col lg="12" sm="12" cols="12" class="pa-0 player-wrap">
       <div class="hold-video">
         <div class="video__poster" ref="videoPoster">
-          <a href="#" @click.prevent="playVideo()"><v-icon>mdi-play-circle</v-icon></a>
+          <a href="#" @click.prevent="playVideo()"><v-icon>mdi-play</v-icon></a>
         </div>
         <video ref="videoElem" src="@/assets/video/sample.mp4" controls ></video>
       </div>
-      <a href="#" class="btn-inset light__purple"><i>Get started</i></a>
+      <a href="#" class="btn-inset light__red"><i>Get started</i></a>
     </v-col>
   </v-row>
 </template>
@@ -156,20 +156,28 @@ export default {
     display: flex;
 
     a{
-      width: 128px;
-      height: 128px;
+      width: 202px;
+      height: 202px;
       background: #F8F8F8;
       box-shadow: -6px -6px 16px #D7D7D7,
-      6px 6px 16px rgba(209, 205, 199, 0.4);
+       6px 6px 16px rgba(209, 205, 199, 0.4);
       border-radius: 100px;
       text-decoration: none;
       text-align: center;
-      line-height: 128px;
+      line-height: 120px;
+      border: 40px solid #2410A4;
+      transition: all .3s ease-in-out;
+
+      &:hover{
+        transform: scale(1.1);
+      }
       
 
       i{
-        font-size: 73px;
+        font-size: 121px;
         color: #2410A4;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 100%;
       }
     }
   }

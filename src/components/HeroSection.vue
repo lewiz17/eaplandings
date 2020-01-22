@@ -1,16 +1,16 @@
 <template>
   <v-row class="hero-wrap">
-    <v-col lg="12" sm="12" class="pa-0 head-bar">
+    <v-col lg="12" sm="12" cols="12" class="pa-0 head-bar">
       <a href="#">
         <img src="@/assets/icons/logo.png" alt="">
       </a>
     </v-col>
-    <v-col lg="6" sm="12" class="pa-0 intro-section">
+    <v-col lg="6" sm="12" cols="12" class="pa-0 intro-section">
       <h1>Make Your Online Resume</h1>
       <p>We believe that resume’s can look beautiful, we help freelancers, contractors &amp; jobseekers create stunning online resume’s.</p>
       <a href="#" class="btn-inset light__red hideOnTab"><i>Get started</i></a>
     </v-col>
-    <v-col lg="6" sm="12" class="pa-0 form-wrap">
+    <v-col lg="6" sm="12" cols="12" class="pa-0 form-wrap">
       <div class="hold-form">
         <span class="title-form">
           Create new account
@@ -28,7 +28,7 @@
         <v-form ref="formSignup" v-model="isValid">
           <v-container>
             <v-row>
-              <v-col lg="12" sm="12">
+              <v-col lg="12" sm="12" cols="12">
                 <v-text-field
                   placeholder="Email"
                   v-model="formSignup.email"
@@ -37,7 +37,7 @@
                   required
                 ></v-text-field>
               </v-col>
-              <v-col lg="12" sm="12">
+              <v-col lg="12" sm="12" cols="12">
                 <v-text-field
                   placeholder="Password"
                   v-model="formSignup.password"
@@ -47,7 +47,7 @@
                   required
                 ></v-text-field>
               </v-col>
-              <v-col lg="12" sm="12">
+              <v-col lg="12" sm="12" cols="12">
                 <a href="#" class="btn-inset light__blue full" @click.prevent="submitForm"><i>Sign up</i></a>
               </v-col>
             </v-row>
@@ -118,9 +118,10 @@ export default {
 
     .form-wrap{
       justify-content: center;
+      max-width: 100%;
 
       .hold-form{
-        max-width: 100%;
+        max-width: 90%;
         width: 100%;
         padding: 40px 0px;
 
@@ -129,7 +130,7 @@ export default {
         }
 
         .social-wrap{
-          max-width: 460px;
+          max-width: 90%;
         }
       }
 
@@ -241,7 +242,7 @@ export default {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #616161;
+    color: #575757;
 
     a{
       font-weight: bold;
@@ -276,7 +277,7 @@ export default {
     margin-bottom: 30px;
   }
 
-  .col{
+  .col,.col-12{
     padding: 0;
   }
 }

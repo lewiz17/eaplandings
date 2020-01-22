@@ -4,21 +4,21 @@
       <span class="title-three">Follow Us</span>
       <div class="follow-section">
         <span class="item-follow">
-          <a href=""><img src="@/assets/icons/facebook.png" alt=""></a>          
+          <a href="" class="facebook-icon"></a>          
           14,044 Followers
         </span>
         <span class="item-follow">
-          <a href=""><img src="@/assets/icons/instagram.png" alt=""></a>
+          <a href="" class="instagram-icon"></a>
           733 Followers
         </span>
       </div>
       <span class="title-three">Contact Us</span>
       <div class="social-section">
-        <a href=""><img src="@/assets/icons/email.png" alt=""></a>
-        <a href=""><img src="@/assets/icons/messenger.png" alt=""></a>
-        <a href=""><img src="@/assets/icons/skype.png" alt=""></a>
-        <a href=""><img src="@/assets/icons/whatsapp.png" alt=""></a>
-        <a href=""><img src="@/assets/icons/slack.png" alt=""></a>
+        <a href="" class="email-icon"></a>
+        <a href="" class="messenger-icon"></a>
+        <a href="" class="skype-icon"></a>
+        <a href="" class="whatsapp-icon"></a>
+        <a href="" class="slack-icon"></a>
       </div>
     </v-col>
   </v-row>
@@ -60,9 +60,7 @@ export default {
         width: 72.6px !important;
         height: 72.6px !important;
 
-        img{
-          max-width: 32.1px;
-        }
+        background-size: 32.1px !important;
       }
     }
 
@@ -128,7 +126,7 @@ export default {
       a{
         width: 67px;
         height: 67px;
-        background: #F8F8F8;
+        background-color: #F8F8F8;
         box-shadow: -6px -6px 16px #FFFFFF,
         6px 6px 16px rgba(209, 205, 199, 0.4);
         border-radius: 15px;
@@ -137,10 +135,29 @@ export default {
         text-align: center;
         margin-right: 26px;
         text-decoration: none;
+        vertical-align: middle;
+        
+        background-position: center;
+        background-repeat: no-repeat;
 
-        img{
-          max-width: 23px;
+        &.facebook-icon{
+          background-image: url('../assets/icons/facebook-black.png');
+          background-size: 11px;
+
+          &:hover{
+            background-image: url('../assets/icons/facebook.png');
+          }
         }
+        &.instagram-icon{
+          background-image: url('../assets/icons/instagram-black.png');
+          background-size: 23px;
+
+          &:hover{
+            background-image: url('../assets/icons/instagram.png');
+          }
+        }
+
+        
       }
       
       
@@ -160,7 +177,7 @@ export default {
       width: 104px;
       height: 104px;
       text-align: center;
-      background: #F8F8F8;
+      background-color: #F8F8F8;
       box-shadow: -6px -6px 16px #FFFFFF,
        6px 6px 16px rgba(209, 205, 199, 0.4);
       border-radius: 100px;
@@ -168,6 +185,46 @@ export default {
       justify-content: center;
       align-items: center;
       text-decoration: none;
+      background-size: 46px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &.email-icon{
+        background-image: url('../assets/icons/email-black.png');
+
+        &:hover{
+          background-image: url('../assets/icons/email.png');
+        }
+      }
+      &.messenger-icon{
+        background-image: url('../assets/icons/messenger-black.png');
+
+        &:hover{
+          background-image: url('../assets/icons/messenger.png');
+        }
+      }
+      &.skype-icon{
+        background-image: url('../assets/icons/skype-black.png');
+
+        &:hover{
+          background-image: url('../assets/icons/skype.png');
+        }
+      }
+      &.whatsapp-icon{
+        background-image: url('../assets/icons/whatsapp-black.png');
+
+        &:hover{
+          background-image: url('../assets/icons/whatsapp.png');
+        }
+      }
+      &.slack-icon{
+        background-image: url('../assets/icons/slack-black.png');
+
+        &:hover{
+          background-image: url('../assets/icons/slack.png');
+        }
+      }
+
     }
   }
 }
