@@ -264,7 +264,7 @@ export default {
     }
 
     &:hover{
-      transform: scale(1.05);
+      opacity: .8;
     }
 
     @media only screen 
