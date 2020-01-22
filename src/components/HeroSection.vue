@@ -208,7 +208,7 @@ export default {
 
 .intro-section{
   h1{
-    padding-top: 140px;
+    padding-top: 90px;
     max-width: 580px;
   }
   p{
