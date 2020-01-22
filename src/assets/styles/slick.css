@@ -265,11 +265,11 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .hold-slider .slick-slide.slick-current{
-        width: 220px !important;
+        width: 260px !important;
         min-height: 180px;
     }
     .hold-slider .slick-slide.slick-current .slide-resume{
-        min-width: 220px;
+        min-width: 260px;
     }
     .hold-slider .slick-slide.slick-current img{
         min-height: 170px;
