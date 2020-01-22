@@ -203,12 +203,12 @@ export default {
 }
 
 .head-bar{
-  margin-bottom: 116px;
+  margin-bottom: 100px;
 }
 
 .intro-section{
   h1{
-    padding-top: 130px;
+    padding-top: 140px;
     max-width: 580px;
   }
   p{

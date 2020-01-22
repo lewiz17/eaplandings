@@ -126,7 +126,7 @@ export default {
       margin: 0px 75px;
       font-family: "Open Sans";
       font-style: normal;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 25px;
       line-height: 34px;
       color: #575757;
