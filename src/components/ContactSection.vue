@@ -81,8 +81,8 @@ export default {
       .item-follow{
         width: 80%;
         margin-bottom: 10px !important;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 20px !important;
+        line-height: 25px !important;
 
         a{
           width: 50px !important;
