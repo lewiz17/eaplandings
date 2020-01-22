@@ -81,7 +81,6 @@ export default {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    flex-flow: column;
     margin-bottom: 45px;
 
     .vicon-set{
