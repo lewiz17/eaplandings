@@ -198,7 +198,7 @@ export default {
 
     .nav-slider{
       max-width: 162px;
-      top: 10%;
+      top: 5%;
       right: 45px;
       left: auto;
 
