@@ -117,6 +117,20 @@ export default {
     }
   }
 
+  @media only screen 
+  and (min-device-width: 770px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .vicon-set{
+
+      img{
+        max-height: 420px;
+      }
+    }
+
+  }
+
 }
 
 .video-section{

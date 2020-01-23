@@ -129,6 +129,7 @@ export default {
 
       img{
         margin: auto;
+        max-height: 436px;
       }
     }
 
