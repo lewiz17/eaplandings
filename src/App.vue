@@ -77,6 +77,10 @@ export default {
   .container{
     padding: 70px 12px 125px 12px;
 
+    @media (min-width: 960px){
+      max-width: 85%;
+    }
+
     @media (min-width: 1264px){
       max-width: 90%;
     }
@@ -95,6 +99,79 @@ export default {
 
       margin: 0px 10px !important;
       padding: 30px 12px 100px 12px;
+    }
+
+    @media only screen 
+    and (min-device-width: 960px) 
+    and (max-device-width: 1264px) {
+      .hero-wrap{
+        .form-wrap{
+          justify-content: center;
+          margin-top: 3em;
+
+          .hold-form{
+            max-width: 70%;
+          }
+        }
+        .intro-section h1{
+          padding-top: 0px;
+        }
+      }
+      .video-wrap{
+        .video-section{
+          padding-top: 0px;
+        }
+        .player-wrap{
+          .hold-video{
+            min-height: auto;
+            padding: 10px 15px;
+
+            .video__poster,video{
+              min-height: 460px;
+            }
+            .video__poster{
+              min-width:96.5%;
+            }
+          }
+        }
+      }
+
+      .slider-wrap{
+
+        .text-section{
+          padding-top: 0px;
+        }
+
+        .hold-slider{
+          .nav-slider{
+            width: 270px;
+            top: 3em;
+            right: 1%;
+            left: auto;
+
+            a{
+              width: 50px;
+              height: 50px;
+
+              img{
+                max-width: 20px;
+              }
+            }
+          }
+          .slick-dots li{
+            margin: 0px 6px;
+
+            button{
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .slider-section{
+          margin-bottom: 5em;
+        }
+      }
     }
 
             
