@@ -5,7 +5,7 @@
       <p>Make your resume visually amazing. Ensure that you stand out<br/>and make a great first impression with any hiring manager.</p>
     </v-col>
     <v-col lg="3" sm="12" cols="12" class="pa-0 iconset-slider">
-      <img src="@/assets/icons/float-iconset-slider.svg" alt="">
+      <img src="@/assets/icons/iconset-slider.png" alt="">
     </v-col>
     <v-col lg="12" sm="12" cols="12" class="pa-0 slider-section">
       <div class="hold-slider">
