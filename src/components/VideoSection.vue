@@ -55,7 +55,8 @@ export default {
       margin-top: 52px;
 
       img{
-        max-width: 260px;
+        max-width: 360px;
+        max-height: 46vh;
       }
     }
 

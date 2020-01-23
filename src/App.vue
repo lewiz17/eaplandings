@@ -83,6 +83,7 @@ export default {
 
     @media (min-width: 1264px){
       max-width: 90%;
+
     }
     @media (min-width: 1904px){
       max-width: 81%;
@@ -153,7 +154,7 @@ export default {
         .vicon-set{
 
           img{
-            max-height: 420px;
+            max-height: 80vh;
           }
         }
       }
@@ -165,7 +166,7 @@ export default {
 
           img{
             margin: 0;
-            max-height: 430px;
+            max-height: 80vh;
           }
         }
 

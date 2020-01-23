@@ -89,7 +89,8 @@ export default {
 
       img{
         margin: 0;
-        max-width: 250px;
+        min-width: 260px;
+        max-height: 68vh;
       }
     }
     .text-section{
