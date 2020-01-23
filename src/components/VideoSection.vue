@@ -72,6 +72,19 @@ export default {
           min-width: calc(100% - 13px);
           min-height: 450px;
         }
+
+        .video__poster{
+          a{
+            width: 60px;
+            height: 60px;
+            line-height: 30px;
+            border: 10px solid #2410A4;
+
+            i{
+              font-size: 38px;
+            }
+          }
+        }
         
       }
     }
