@@ -1,13 +1,13 @@
 <template>
   <v-row class="slider-wrap">
-    <v-col lg="9" sm="12" class="text-section">
+    <v-col lg="9" sm="12" cols="12" class="text-section">
       <span class="title-two">20+ Beautiful Themes to choose from</span>
       <p>Make your resume visually amazing. Ensure that you stand out<br/>and make a great first impression with any hiring manager.</p>
     </v-col>
-    <v-col lg="3" sm="12" class="pa-0 iconset-slider">
+    <v-col lg="3" sm="12" cols="12" class="pa-0 iconset-slider">
       <img src="@/assets/icons/iconset-slider.png" alt="">
     </v-col>
-    <v-col lg="12" sm="12" class="pa-0 slider-section">
+    <v-col lg="12" sm="12" cols="12" class="pa-0 slider-section">
       <div class="hold-slider">
         <slick ref="slick" :options="slickOptions">
           <div class="slide-resume">

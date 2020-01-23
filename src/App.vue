@@ -102,8 +102,13 @@ export default {
     }
 
     @media only screen 
-    and (min-device-width: 960px) 
+    and (min-device-width: 769px) 
     and (max-device-width: 1264px) {
+
+     
+      max-width: 95%;
+      
+
       .hero-wrap{
         .form-wrap{
           justify-content: center;
@@ -131,12 +136,38 @@ export default {
             }
             .video__poster{
               min-width:96.5%;
+
+              a{
+                width: 100px;
+                height: 100px;
+                border: 20px solid #2410A4;
+                line-height: 50px;
+
+                i{
+                  font-size: 60px;
+                }
+              }
             }
+          }
+        }
+        .vicon-set{
+
+          img{
+            max-height: 420px;
           }
         }
       }
 
       .slider-wrap{
+
+        .iconset-slider{
+          justify-content: center;
+
+          img{
+            margin: 0;
+            max-height: 430px;
+          }
+        }
 
         .text-section{
           padding-top: 0px;
@@ -172,6 +203,54 @@ export default {
           margin-bottom: 5em;
         }
       }
+      .comments-wrap{
+        margin-bottom: 30px;
+
+        .top-resumes{
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          flex-flow: wrap;
+
+          .item-top{
+            max-width: 100%;
+            width: 600px;
+
+            .top-info{
+              min-width: 75%;
+            }
+          }
+        }
+      }
+
+      .contact-wrap{
+        .contact-section{
+          .follow-section{
+            .item-follow{
+              font-size: 20px;
+              line-height: 30px;
+              margin:0px 5%;
+            }
+          }
+        }
+      }
+
+      .link_next{
+        margin-top: 30px;
+      }
+
+      .hold-slider .slick-slide.slick-current{
+        width: 480px !important;
+        min-height: auto;
+        height: 400px;
+      }
+      .hold-slider .slick-slide.slick-current .slide-resume{
+        min-width: 480px;
+      }
+      .hold-slider .slick-slide.slick-current img{
+        min-width: 480px;
+      }
+      
     }
 
             
