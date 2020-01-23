@@ -144,7 +144,7 @@ export default {
 
         .hold-slider{
           .nav-slider{
-            width: 270px;
+            width: 25%;
             top: 3em;
             right: 1%;
             left: auto;
