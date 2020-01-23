@@ -5,7 +5,7 @@
       <p>100+ Integrations. Ensure your clients can easily contact, hire and pay you.</p>
     </v-col>
     <v-col lg="5" sm="12" cols="12" class="pa-0 vicon-set">
-      <img src="@/assets/icons/iconset-video.png" alt="">
+      <img src="../assets/icons/iconset-float-video.png" alt="">
     </v-col>
     <v-col lg="12" sm="12" cols="12" class="pa-0 player-wrap">
       <div class="hold-video">
@@ -159,6 +159,11 @@ export default {
 .vicon-set{
   justify-content: center;
   display: flex;
+
+  img{
+    max-width: 530px;
+    max-height: 415px;
+  }
 }
 
 .player-wrap{
