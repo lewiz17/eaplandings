@@ -429,15 +429,18 @@ export default {
     and (max-device-width: 480px)
     and (-webkit-min-device-pixel-ratio: 2) {
 
-      min-height: 95px;
-      line-height: 95px;
+      box-shadow: inset 3px 2px 5px rgba(185, 185, 185, 0.6),
+        inset -3px -2px 8px #FFFFFF;
+      border-radius: 15px;
+      min-height: 70px;
+      line-height: 70px;
 
       i{
-        min-height: 65px;
-        line-height: 65px;
-      }
-
-
+        min-height: 50px;
+        line-height: 50px;
+        border-radius: 15px;
+        min-width: 90%;
+      }      
     }
 
   }
@@ -451,6 +454,16 @@ export default {
       inset 6px 4px 12px rgba(0, 0, 0, 0.25), 
       inset -6px -4px 12px #FFFFFF;
       border: 1px solid #fff;
+
+      @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 480px)
+      and (-webkit-min-device-pixel-ratio: 2) { 
+        box-shadow: -3px -3px 8px #FFFFFF, 
+        inset 3px 2px 6px rgba(0, 0, 0, 0.25), 
+        inset -3px -2px 6px #FFFFFF;
+        border: 1px solid #fff;
+      }
     }
   }
   
@@ -509,6 +522,16 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      text-align: center;
+    }
   }
 }
 

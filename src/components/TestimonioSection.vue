@@ -217,7 +217,7 @@ export default {
 
           .top-info{
 
-            max-width: 70%;
+            max-width: 85%;
             min-width: auto;
 
             p{
@@ -241,6 +241,7 @@ export default {
               font-size: 14px;
               margin-top: 10px;
               line-height: 16px;
+              text-align: center;
 
               i{
                 font-size: 25px;

@@ -116,14 +116,18 @@ export default {
           min-height: 250px;
         }
 
+        video{
+          border-radius: 20px;
+        }
+
         .video__poster a{
           max-width: 80px;
           max-height: 80px;
-          line-height: 40px;
+          line-height: 38px;
           border: 10px solid #2410A4;
 
           i{
-            font-size: 60px;
+            font-size: 41px;
           }
         }
         

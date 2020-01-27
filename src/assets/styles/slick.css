@@ -282,7 +282,7 @@
 
     .hold-slider .slick-slide{
         width: 200px !important;
-        height: 160px;
+        height: 180px;
         margin-right: 10px;
     }
     .hold-slider .slick-slide img{
@@ -290,12 +290,18 @@
         border-radius: 10px;
     }
     .hold-slider .slick-track{
-        min-height: 240px !important;
+        min-height: 220px !important;
+        align-items: flex-start;
     }
     .hold-slider .nav-slider{
-        top: 0px !important;
+        top: auto !important;
         right: auto !important;
         left: 30% !important;
+        bottom: 0px !important;
+    }
+
+    .slick-list{
+        overflow: visible;
     }
 }
 
